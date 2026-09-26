@@ -4,42 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Avichal Kumar | Software Engineer Portfolio</title>
+    
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">E-Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-code">&lt;</span>Aayush<span class="brand-code">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="mailto:avichal0722@gmail.com" class="btn btn-gradient btn-sm px-4 rounded-pill">Get In Touch</a>
                     </li>
                 </ul>
             </div>
@@ -47,26 +41,38 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero d-flex align-items-center">
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-3">Aayush Avichal Kumar</h1>
-                    <h2 class="mb-4">Full-Stack Software Engineer</h2>
-                    <p class="lead mb-4">Expert in Laravel, Spring Boot, Django, NodeJs, Ionic and React Native with experience in building scalable web and mobile applications.</p>
-                    <div class="hero-contact-info">
-                        <p><i class="fas fa-map-marker-alt me-2"></i>Balolo Road, Narere, Nasinu</p>
-                        <p><i class="fas fa-phone me-2"></i> 8365125</p>
-                        <p><i class="fas fa-envelope me-2"></i><a href="mailto:avichal0722@gmail.com">avichal0722@gmail.com</a></p>
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="badge bg-soft-primary text-primary px-3 py-2 mb-3 rounded-pill">
+                        <i class="fas fa-circle text-success me-2 fs-xs"></i>Available for new opportunities
                     </div>
-                    <div class="mt-4">
-                        <a href="#contact" class="btn btn-primary btn-lg me-3">Contact Me</a>
-                        <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
+                    <h1 class="display-3 fw-bold mb-3 tracking-tight">Aayush Avichal Kumar</h1>
+                    <h2 class="h3 text-gradient mb-4">Full-Stack Software Engineer</h2>
+                    <p class="lead text-muted mb-4 pe-lg-5">
+                        Specializing in building robust, scalable web and mobile applications using <strong>Laravel, Spring Boot, Django, Node.js</strong>, and <strong>React Native</strong>.
+                    </p>
+
+                    <div class="hero-contact-list d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4 text-secondary">
+                        <span class="d-flex align-items-center"><i class="fas fa-map-marker-alt text-primary me-2"></i>Nasinu, Fiji</span>
+                        <span class="d-flex align-items-center"><i class="fas fa-phone text-primary me-2"></i>+679 8365125</span>
+                        <a href="mailto:avichal0722@gmail.com" class="text-decoration-none text-secondary d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>avichal0722@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-gradient btn-lg rounded-pill px-4">View My Work</a>
+                        <a href="https://github.com/avichal2py" target="_blank" rel="noopener" class="btn btn-outline-custom btn-lg rounded-pill px-4">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <div class="profile-img-container">
-                        <img src="myPic.jpg" alt="Aayush Avichal Kumar" class="profile-img">
+
+                <div class="col-lg-5 text-center">
+                    <div class="profile-avatar-wrapper mx-auto">
+                        <img src="myPic.jpg" alt="Aayush Avichal Kumar" class="img-fluid profile-avatar shadow-lg">
                     </div>
                 </div>
             </div>
@@ -74,45 +80,57 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-6">
         <div class="container">
-            <h2 class="section-title text-center mb-5">About Me</h2>
-            <div class="row">
+            <div class="section-header text-center mb-5">
+                <span class="text-uppercase text-primary fw-semibold tracking-wider">Background</span>
+                <h2 class="display-6 fw-bold">About Me</h2>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">Professional Summary</h3>
-                    <p class="mb-4">I am a passionate Software Engineer with hands-on experience in full-stack web development, mobile applications, and system architecture. Currently working as an Application Developer at Mindpearl, developing and maintaining Laravel and PHP-based applications.</p>
-                    <p class="mb-4">I hold a Bachelor of Software Engineering from the University of the South Pacific with a 3.3 GPA, and I'm constantly learning new technologies and methodologies to improve my craft.</p>
-                    <div class="education-card p-4 mb-4">
-                        <h4><i class="fas fa-graduation-cap me-2"></i>Education</h4>
-                        <h5 class="mt-3">Bachelor of Software Engineering</h5>
-                        <p class="mb-1">University of the South Pacific</p>
-                        <p class="text-muted">GPA: 3.3</p>
+                    <div class="card glass-card h-100 p-4 border-0">
+                        <h3 class="h4 mb-3">Professional Summary</h3>
+                        <p class="text-muted">
+                            I am a results-driven Software Engineer with hands-on experience in full-stack web development, mobile solutions, and API design. Currently working as an Application Developer at <strong>Mindpearl</strong>, focusing on developing high-performance Laravel and PHP enterprise applications.
+                        </p>
+                        
+                        <div class="education-box mt-auto p-3 rounded-4 bg-soft-primary">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-square bg-primary text-white rounded-3 p-2">
+                                    <i class="fas fa-graduation-cap fs-5"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Bachelor of Software Engineering</h5>
+                                    <p class="mb-0 text-muted">University of the South Pacific</p>
+                                    <small class="fw-semibold text-primary">GPA: 3.3</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
-                    <h3 class="mb-4">Technical Expertise</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Laravel & PHP</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Spring Boot & Java</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Django & Python</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>React Native</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>RESTful APIs</li>
-                            </ul>
+                    <div class="card glass-card h-100 p-4 border-0">
+                        <h3 class="h4 mb-3">Core Competencies</h3>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>Laravel & PHP</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>Spring Boot & Java</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>Django & Python</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>React Native</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>RESTful API Design</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>Microservices Architecture</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>SQL & Relational DBs</li>
+                                    <li class="mb-2 d-flex align-items-center"><i class="fas fa-check-circle text-primary me-2"></i>Linux (Ubuntu) & Git</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Microservices</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>MVC/MVT Architecture</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>SQL Databases</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Linux (Ubuntu)</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Git & Version Control</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <img src="https://via.placeholder.com/600x300/6c757d/ffffff?text=About+Me+Image+Placeholder" alt="About Me" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -120,59 +138,36 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
+    <section id="experience" class="py-6 bg-light-subtle">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Work Experience</h2>
-            
-            <!-- Current Job -->
-            <div class="experience-card mb-5">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="company-logo-container text-center mb-3">
-                            <img src="mindpearl-logo.png" alt="Mindpearl Logo" class="company-logo">
-                            <h4 class="mt-3">MINDPEARL</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <h3>Application Developer</h3>
-                        <p class="text-primary">February 2025 – Present</p>
-                        <ul>
-                            <li>Developing and maintaining Laravel and PHP-based applications for internal systems and business platforms.</li>
-                            <li>Built an Employee Management System handling staff records, workflows, and administrative processes.</li>
-                            <li>Developed a LinkedIn API Dashboard to retrieve, process, and visualize statistical and engagement data.</li>
-                            <li>Contributed to a Bus Booking System supporting reservations, scheduling, and operational management.</li>
-                            <li>Created a Document Signing System enabling digital signatures and secure document handling.</li>
-                            <li>Built an Agent Tool providing real-time access to airport information, bookings, and operational data.</li>
-                            <li>Implementing RESTful APIs and backend services to support system integrations and data flow.</li>
-                            <li>Applying MVC architecture and best practices to ensure scalable, maintainable codebases.</li>
-                            <li>Working in a Linux-based development environment with structured testing and documentation.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="section-header text-center mb-5">
+                <span class="text-uppercase text-primary fw-semibold tracking-wider">Career</span>
+                <h2 class="display-6 fw-bold">Work Experience</h2>
             </div>
-            
-            <!-- University Projects -->
-            <h3 class="text-center mb-4">University Projects & Coursework</h3>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Application Development</h5>
-                            <p class="card-text">Developed websites and applications using HTML, CSS, JavaScript, and various frameworks including Spring Boot (Java), Django (Python), PHP (Laravel), and ASP.NET.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Key University Projects</h5>
-                            <ul class="mb-0">
-                                <li>Hospital Management System with Django</li>
-                                <li>E-portfolio website</li>
-                                <li>Price and inventory management system in C++</li>
-                                <li>Tic-Tac-Toe game using Python and WebSockets</li>
-                                <li>Plant health evaluation app with low-code platforms</li>
-                            </ul>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Current Position -->
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                        <div class="row align-items-start g-4">
+                            <div class="col-md-3 text-center text-md-start">
+                                <div class="company-badge mb-2">
+                                    <img src="mindpearl-logo.png" alt="Mindpearl Logo" class="img-fluid rounded-3 mb-2" style="max-height: 50px;">
+                                    <h4 class="h5 fw-bold mb-0">MINDPEARL</h4>
+                                </div>
+                                <span class="badge bg-soft-primary text-primary rounded-pill px-3 py-2">Feb 2025 – Present</span>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="h4 mb-1">Application Developer</h3>
+                                <p class="text-muted small mb-3">Full-time | Development & System Integration</p>
+                                <ul class="text-secondary ps-3 mb-0 lh-lg">
+                                    <li>Developing and maintaining high-performance Laravel and PHP applications for enterprise clients.</li>
+                                    <li>Built an end-to-end <strong>Employee Management System</strong> streamlining administrative workflows and records.</li>
+                                    <li>Engineered a <strong>LinkedIn API Dashboard</strong> to extract, process, and visualize real-time engagement data.</li>
+                                    <li>Developed secure features for digital document signing and real-time flight/booking agent support systems.</li>
+                                    <li>Architected RESTful APIs and backend services following standard MVC practices in a Linux environment.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,89 +175,85 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-6">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Technical Skills</h2>
-            
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h4 class="mb-3"><i class="fas fa-code me-2"></i>Programming Languages</h4>
-                    <div class="skill-bars">
+            <div class="section-header text-center mb-5">
+                <span class="text-uppercase text-primary fw-semibold tracking-wider">Expertise</span>
+                <h2 class="display-6 fw-bold">Technical Skills</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <h4 class="h5 mb-4"><i class="fas fa-code text-primary me-2"></i>Languages & Proficiency</h4>
+                        
                         <div class="skill-item mb-3">
-                            <div class="d-flex justify-content-between">
-                                <span>JavaScript</span>
-                                <span>90%</span>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">JavaScript</span>
+                                <span class="text-muted">90%</span>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            <div class="progress progress-thin">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+
                         <div class="skill-item mb-3">
-                            <div class="d-flex justify-content-between">
-                                <span>PHP</span>
-                                <span>85%</span>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">PHP (Laravel)</span>
+                                <span class="text-muted">85%</span>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            <div class="progress progress-thin">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+
                         <div class="skill-item mb-3">
-                            <div class="d-flex justify-content-between">
-                                <span>Python</span>
-                                <span>80%</span>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Java (Spring Boot)</span>
+                                <span class="text-muted">85%</span>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            <div class="progress progress-thin">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+
                         <div class="skill-item mb-3">
-                            <div class="d-flex justify-content-between">
-                                <span>Java</span>
-                                <span>85%</span>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Python (Django)</span>
+                                <span class="text-muted">80%</span>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item mb-3">
-                            <div class="d-flex justify-content-between">
-                                <span>C++</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            <div class="progress progress-thin">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-6 mb-4">
-                    <h4 class="mb-3"><i class="fas fa-cogs me-2"></i>Frameworks & Technologies</h4>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">Laravel</span>
-                        <span class="skill-badge">Spring Boot</span>
-                        <span class="skill-badge">Django</span>
-                        <span class="skill-badge">React Native</span>
-                        <span class="skill-badge">ASP.NET</span>
-                        <span class="skill-badge">RESTful APIs</span>
-                        <span class="skill-badge">Microservices</span>
-                        <span class="skill-badge">MVC/MVT</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">Linux (Ubuntu)</span>
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">AppSheet</span>
-                        <span class="skill-badge">WebSockets</span>
-                    </div>
-                    
-                    <h4 class="mt-4 mb-3"><i class="fas fa-tools me-2"></i>Tools & Platforms</h4>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">WinSCP</span>
-                        <span class="skill-badge">Putty</span>
-                        <span class="skill-badge">Looker Studio</span>
-                        <span class="skill-badge">AppScript</span>
-                        <span class="skill-badge">Teams</span>
-                        <span class="skill-badge">Outlook</span>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <h4 class="h5 mb-3"><i class="fas fa-layer-group text-primary me-2"></i>Frameworks & Ecosystem</h4>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge tag-pill">Laravel</span>
+                            <span class="badge tag-pill">Spring Boot</span>
+                            <span class="badge tag-pill">Django</span>
+                            <span class="badge tag-pill">React Native</span>
+                            <span class="badge tag-pill">Node.js</span>
+                            <span class="badge tag-pill">REST APIs</span>
+                            <span class="badge tag-pill">Microservices</span>
+                            <span class="badge tag-pill">SQL</span>
+                            <span class="badge tag-pill">Linux (Ubuntu)</span>
+                            <span class="badge tag-pill">Git / GitHub</span>
+                        </div>
+
+                        <h4 class="h5 mb-3"><i class="fas fa-tools text-primary me-2"></i>Tools & Development</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge tag-pill">AppSheet</span>
+                            <span class="badge tag-pill">Looker Studio</span>
+                            <span class="badge tag-pill">AppScript</span>
+                            <span class="badge tag-pill">WinSCP / PuTTY</span>
+                            <span class="badge tag-pill">WebSockets</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,148 +261,130 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="py-6 bg-light-subtle">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Projects</h2>
-            
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Employee Management System</h5>
-                            <p class="card-text">Built at Mindpearl to handle staff records, workflows, and administrative processes using Laravel and PHP.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">Laravel</span>
-                                <span class="badge bg-primary">PHP</span>
-                                <span class="badge bg-primary">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">LinkedIn API Dashboard</h5>
-                            <p class="card-text">Dashboard to retrieve, process, and visualize statistical and engagement data from LinkedIn API.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">API</span>
-                                <span class="badge bg-primary">JavaScript</span>
-                                <span class="badge bg-primary">Data Visualization</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-bus"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Bus Booking System</h5>
-                            <p class="card-text">System supporting reservations, scheduling, and operational management for transportation services.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">Laravel</span>
-                                <span class="badge bg-primary">REST API</span>
-                                <span class="badge bg-primary">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-file-signature"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Document Signing System</h5>
-                            <p class="card-text">Secure system enabling digital signatures and document handling with authentication and encryption.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">PHP</span>
-                                <span class="badge bg-primary">Security</span>
-                                <span class="badge bg-primary">Digital Signatures</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-plane"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Agent Tool</h5>
-                            <p class="card-text">Tool providing real-time access to airport information, bookings, and operational data for agents.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">Real-time</span>
-                                <span class="badge bg-primary">Laravel</span>
-                                <span class="badge bg-primary">API</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Plant Health Evaluation App</h5>
-                            <p class="card-text">Built with low-code platforms (AppSheet, Looker Studio, AppScript) to assist farmers and agronomists.</p>
-                            <div class="tech-tags">
-                                <span class="badge bg-primary">AppSheet</span>
-                                <span class="badge bg-primary">Looker Studio</span>
-                                <span class="badge bg-primary">AppScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header text-center mb-5">
+                <span class="text-uppercase text-primary fw-semibold tracking-wider">Portfolio</span>
+                <h2 class="display-6 fw-bold">Featured Projects</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">References</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="d-flex flex-wrap gap-4 justify-content-center">
-                        <div class="reference-card p-3 mb-3 flex-fill" style="min-width:250px;max-width:320px;">
-                            <h5>Mr. Roneel Lal</h5>
-                            <p class="mb-1">USP Lecturer</p>
-                            <p class="mb-1"><i class="fas fa-envelope me-2"></i> <a href="mailto:ronn12lal@gmail.com">ronn12lal@gmail.com</a></p>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-users-cog fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">Employee Management System</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Enterprise web application built at Mindpearl to manage staff records, automated approval workflows, and operational HR administration.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">Laravel</span>
+                                <span class="badge bg-soft-primary text-primary">PHP</span>
+                                <span class="badge bg-soft-primary text-primary">MySQL</span>
+                            </div>
                         </div>
-                        <div class="reference-card p-3 mb-3 flex-fill" style="min-width:250px;max-width:320px;">
-                            <h5>Mr. Ashneel Narayan</h5>
-                            <p class="mb-1">FCCC Employee</p>
-                            <p class="mb-1"><i class="fas fa-envelope me-2"></i> <a href="mailto:ashneel777narayan@gmail.com">ashneel777narayan@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-chart-bar fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">LinkedIn API Dashboard</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Analytics dashboard connecting directly with LinkedIn APIs to fetch, process, and dynamically present post engagement metrics.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">REST API</span>
+                                <span class="badge bg-soft-primary text-primary">JavaScript</span>
+                                <span class="badge bg-soft-primary text-primary">Chart.js</span>
+                            </div>
                         </div>
-                        <div class="reference-card p-3 mb-3 flex-fill" style="min-width:250px;max-width:320px;">
-                            <h5>Mr. Ashnil Lal</h5>
-                            <p class="mb-1">Secondary School Teacher</p>
-                            <p class="mb-1"><i class="fas fa-envelope me-2"></i> <a href="mailto:ashnillal587@gmail.com">ashnillal587@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-bus-alt fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">Bus Booking System</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Transit management tool handling seat reservations, route scheduling, and passenger check-ins with an intuitive management panel.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">Laravel</span>
+                                <span class="badge bg-soft-primary text-primary">REST API</span>
+                                <span class="badge bg-soft-primary text-primary">MySQL</span>
+                            </div>
                         </div>
-                        <div class="reference-card p-3 flex-fill" style="min-width:250px;max-width:320px;">
-                            <h5>Anuraag Raj</h5>
-                            <p class="mb-1">Mentor & AI Expert at Mindpearl</p>
-                            <p class="mb-1"><i class="fas fa-envelope me-2"></i> <a href="mailto:anuraag.rajz@gmail.com">anuraag.rajz@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-signature fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">Document Signing System</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Secure document workflow platform allowing encrypted digital signatures, authorization verifications, and audit logging.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">PHP</span>
+                                <span class="badge bg-soft-primary text-primary">Security</span>
+                                <span class="badge bg-soft-primary text-primary">Cryptography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-plane-departure fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">Airport Operations Agent Tool</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Real-time portal providing support agents quick access to flight status details, live passenger bookings, and system operational metrics.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">Laravel</span>
+                                <span class="badge bg-soft-primary text-primary">Real-time</span>
+                                <span class="badge bg-soft-primary text-primary">WebSockets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="project-icon mb-3 text-primary">
+                                <i class="fas fa-seedling fs-2"></i>
+                            </div>
+                            <h3 class="h5 card-title fw-bold">Plant Health Evaluation App</h3>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Low-code solution developed to evaluate crop health data, delivering diagnostic insights directly to field agronomists.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mt-3">
+                                <span class="badge bg-soft-primary text-primary">AppSheet</span>
+                                <span class="badge bg-soft-primary text-primary">Looker Studio</span>
+                                <span class="badge bg-soft-primary text-primary">AppScript</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -420,24 +393,25 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4">
+    <footer class="py-4 bg-dark text-white border-top border-secondary-subtle">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center gy-3">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 Aayush Avichal Kumar. All rights reserved.</p>
+                    <p class="mb-0 text-muted small">&copy; 2026 Aayush Avichal Kumar. Built for performant web experience.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="https://www.linkedin.com/in/aayush-kumar-96a879298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon me-3"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/avichal2py" class="social-icon me-3"><i class="fab fa-github"></i></a>
-                    <a href="https://www.facebook.com/share/1F3PVbzHW5/" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="https://www.linkedin.com/in/aayush-kumar-96a879298" target="_blank" rel="noopener" class="text-muted text-hover-primary"><i class="fab fa-linkedin fs-5"></i></a>
+                        <a href="https://github.com/avichal2py" target="_blank" rel="noopener" class="text-muted text-hover-primary"><i class="fab fa-github fs-5"></i></a>
+                        <a href="https://www.facebook.com/share/1F3PVbzHW5/" target="_blank" rel="noopener" class="text-muted text-hover-primary"><i class="fab fa-facebook fs-5"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
